@@ -38,3 +38,4 @@ airflows.cfg
 # Logs
 logs/
 *.log
+.env
