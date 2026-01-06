@@ -25,3 +25,4 @@ airflow-webserver.pid
 venv/
 .env
 
+dags/config/airflow.cfg
