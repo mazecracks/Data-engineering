@@ -1,0 +1,27 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --------------------
+# Logs
+# --------------------
+logs/
+*.log
+
+# --------------------
+# Airflow
+# --------------------
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+
+# --------------------
+# Virtual environments
+# --------------------
+venv/
+.env
+
