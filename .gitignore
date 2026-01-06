@@ -39,3 +39,6 @@ airflows.cfg
 logs/
 *.log
 .env
+
+# Local secrets
+.env
