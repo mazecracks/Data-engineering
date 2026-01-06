@@ -1,3 +1,5 @@
+# pipeline/tasks.py
+
 import time
 import io
 import csv
@@ -17,55 +19,94 @@ from .logging_utils import log_json
 
 def process_flow_year(cfg: PipelineConfig, flow_name: str, flowref: str, year: int, run_id: str) -> dict:
     """
-    Single responsibility: (flow, year) -> download -> transform -> upload -> return result dict
+    Single responsibility: (flow, year) -> download -> transform -> upload -> return result dict.
+
+    IMPORTANT:
+    - Uses streamed HTTP response + streaming XML parsing (iterparse) to avoid OOM for huge years.
+    - Does NOT use resp.content anywhere.
     """
     t0 = time.perf_counter()
     s3_key = build_s3_key(cfg, flow_name, year)
     s3_uri = f"s3://{cfg.bucket}/{s3_key}"
     ingested_at = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
 
+    # -----------------------------
     # Idempotency
+    # -----------------------------
     if cfg.skip_if_exists:
         try:
             if s3_exists(cfg, s3_key):
                 return {
-                    "flow": flow_name, "year": year, "status": "skipped_exists",
-                    "s3_uri": s3_uri, "rows": None,
+                    "flow": flow_name,
+                    "year": year,
+                    "status": "skipped_exists",
+                    "s3_uri": s3_uri,
+                    "rows": None,
                     "seconds": round(time.perf_counter() - t0, 3),
+                    "run_id": run_id,
                 }
         except Exception as e:
-            log_json("warning", event="s3_head_failed", flow=flow_name, year=year, s3_key=s3_key, error=str(e))
+            log_json(
+                "warning",
+                event="s3_head_failed",
+                flow=flow_name,
+                year=year,
+                s3_key=s3_key,
+                error=str(e),
+            )
 
+    # -----------------------------
     # Build URL
+    # -----------------------------
     url = f"{cfg.base_url}/{flowref}/{cfg.key}/{cfg.sub_key}?startPeriod={year}&endPeriod={year}"
 
-    # Rate limit + fetch
-    rate_limit(cfg.requests_per_second)
-    try:
-        resp = get_session().get(url, timeout=cfg.http_timeout_seconds)
-        resp.raise_for_status()
-    except RequestException as e:
-        return {
-            "flow": flow_name, "year": year, "status": "request_failed",
-            "error": str(e), "url": url,
-            "seconds": round(time.perf_counter() - t0, 3),
-        }
-
-    # Stream CSV to spooled file (memory-safe; spills to disk if large)
-    spooled = tempfile.SpooledTemporaryFile(
-        max_size=cfg.spooled_max_mb * 1024 * 1024,
-        mode="w+b"
-    )
-
+    resp = None
+    spooled = None
     rows_written = 0
+
     try:
+        # -----------------------------
+        # Rate limit + fetch (STREAMING)
+        # -----------------------------
+        rate_limit(cfg.requests_per_second)
         try:
-            row_iter = iter_series_obs_rows(resp.content)
+            resp = get_session().get(url, timeout=cfg.http_timeout_seconds, stream=True)
+            resp.raise_for_status()
+            # Make sure urllib3 decodes content if response is compressed
+            resp.raw.decode_content = True
+        except RequestException as e:
+            return {
+                "flow": flow_name,
+                "year": year,
+                "status": "request_failed",
+                "error": str(e),
+                "url": url,
+                "seconds": round(time.perf_counter() - t0, 3),
+                "run_id": run_id,
+            }
+
+        # -----------------------------
+        # Stream CSV to spooled file (memory-safe; spills to disk if large)
+        # -----------------------------
+        spooled = tempfile.SpooledTemporaryFile(
+            max_size=cfg.spooled_max_mb * 1024 * 1024,
+            mode="w+b",
+        )
+
+        # -----------------------------
+        # Streaming XML -> row iterator
+        # -----------------------------
+        try:
+            # iter_series_obs_rows expects a file-like object (bytes)
+            row_iter = iter_series_obs_rows(resp.raw)
         except ET.ParseError as e:
             return {
-                "flow": flow_name, "year": year, "status": "invalid_xml",
+                "flow": flow_name,
+                "year": year,
+                "status": "invalid_xml",
                 "error": str(e),
                 "seconds": round(time.perf_counter() - t0, 3),
+                "run_id": run_id,
             }
 
         # Prime iterator (to get headers)
@@ -73,9 +114,13 @@ def process_flow_year(cfg: PipelineConfig, flow_name: str, flowref: str, year: i
             first = next(row_iter)
         except StopIteration:
             return {
-                "flow": flow_name, "year": year, "status": "no_data",
-                "s3_uri": None, "rows": 0,
+                "flow": flow_name,
+                "year": year,
+                "status": "no_data",
+                "s3_uri": None,
+                "rows": 0,
                 "seconds": round(time.perf_counter() - t0, 3),
+                "run_id": run_id,
             }
 
         first = dict(first)
@@ -94,7 +139,7 @@ def process_flow_year(cfg: PipelineConfig, flow_name: str, flowref: str, year: i
         writer = csv.DictWriter(text, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         writer.writerow(first)
-        rows_written += 1
+        rows_written = 1
 
         for r in row_iter:
             rr = dict(r)
@@ -102,12 +147,15 @@ def process_flow_year(cfg: PipelineConfig, flow_name: str, flowref: str, year: i
             writer.writerow(rr)
             rows_written += 1
 
+        # Flush and detach wrappers so underlying spooled file has all bytes
         text.flush()
         text.detach()
         if cfg.compress_gzip:
             gz.close()
 
+        # -----------------------------
         # Upload
+        # -----------------------------
         spooled.seek(0)
         upload_fileobj(
             cfg=cfg,
@@ -118,20 +166,35 @@ def process_flow_year(cfg: PipelineConfig, flow_name: str, flowref: str, year: i
         )
 
         return {
-            "flow": flow_name, "year": year, "status": "uploaded",
-            "s3_uri": s3_uri, "rows": rows_written,
+            "flow": flow_name,
+            "year": year,
+            "status": "uploaded",
+            "s3_uri": s3_uri,
+            "rows": rows_written,
             "seconds": round(time.perf_counter() - t0, 3),
             "run_id": run_id,
         }
 
     except Exception as e:
         return {
-            "flow": flow_name, "year": year, "status": "unexpected_failed",
+            "flow": flow_name,
+            "year": year,
+            "status": "unexpected_failed",
             "error": str(e),
             "seconds": round(time.perf_counter() - t0, 3),
+            "run_id": run_id,
         }
+
     finally:
+        # Always close response + spooled file to free resources ASAP (important under Airflow memory limits)
         try:
-            spooled.close()
+            if resp is not None:
+                resp.close()
+        except Exception:
+            pass
+
+        try:
+            if spooled is not None:
+                spooled.close()
         except Exception:
             pass
