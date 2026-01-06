@@ -24,9 +24,9 @@ x-airflow-common:
     AIRFLOW__SMTP__SMTP_PORT: 465
     AIRFLOW__SMTP__SMTP_SSL: "True"
     AIRFLOW__SMTP__SMTP_STARTTLS: "False"
-    AIRFLOW__SMTP__SMTP_USER: "olajuwonayobami@gmail.com"
-    AIRFLOW__SMTP__SMTP_PASSWORD: "yuwwoyzqlajckwvw"
-    AIRFLOW__SMTP__SMTP_MAIL_FROM: "olajuwonayobami@gmail.com"
+    AIRFLOW__SMTP__SMTP_USER: ${AIRFLOW__SMTP__SMTP_USER}
+    AIRFLOW__SMTP__SMTP_PASSWORD: ${AIRFLOW__SMTP__SMTP_PASSWORD}
+    AIRFLOW__SMTP__SMTP_MAIL_FROM: ${AIRFLOW__SMTP__SMTP_MAIL_FROM}
 
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
