@@ -1,0 +1,121 @@
+2025-12-25 01:03:03 | INFO | Pipeline start | flows=3 years=1948..2025 chunk=5 workers=6 http_limit=6 s3_limit=6 gzip=True skip_exists=True
+2025-12-25 01:03:03 | INFO | Fetching | flow=IMTS year=1948 years_chunk=[1948, 1949, 1950, 1951, 1952]
+2025-12-25 01:03:04 | INFO | Fetching | flow=BOP year=1958 years_chunk=[1958, 1959, 1960, 1961, 1962]
+2025-12-25 01:03:04 | INFO | Fetching | flow=CPI year=1988 years_chunk=[1988, 1989, 1990, 1991, 1992]
+2025-12-25 01:03:04 | INFO | Fetching | flow=BOP year=2023 years_chunk=[2023, 2024, 2025]
+2025-12-25 01:03:04 | INFO | Fetching | flow=BOP year=2018 years_chunk=[2018, 2019, 2020, 2021, 2022]
+2025-12-25 01:03:04 | INFO | Fetching | flow=BOP year=2013 years_chunk=[2013, 2014, 2015, 2016, 2017]
+2025-12-25 01:03:05 | SUCCESS | Done | flow=BOP year=1958 rows=944 uri=s3://personal-projectbucket/imf/BOP/year=1958/BOP_1958.csv.gz step_s=2.13
+2025-12-25 01:03:05 | INFO | Fetching | flow=BOP year=1959 years_chunk=[1958, 1959, 1960, 1961, 1962]
+2025-12-25 01:03:06 | SUCCESS | Done | flow=BOP year=1959 rows=944 uri=s3://personal-projectbucket/imf/BOP/year=1959/BOP_1959.csv.gz step_s=1.21
+2025-12-25 01:03:06 | INFO | Fetching | flow=BOP year=1960 years_chunk=[1958, 1959, 1960, 1961, 1962]
+2025-12-25 01:03:08 | SUCCESS | Done | flow=BOP year=1960 rows=1894 uri=s3://personal-projectbucket/imf/BOP/year=1960/BOP_1960.csv.gz step_s=1.33
+2025-12-25 01:03:08 | INFO | Fetching | flow=BOP year=1961 years_chunk=[1958, 1959, 1960, 1961, 1962]
+2025-12-25 01:03:08 | SUCCESS | Done | flow=CPI year=1988 rows=29455 uri=s3://personal-projectbucket/imf/CPI/year=1988/CPI_1988.csv.gz step_s=4.92
+2025-12-25 01:03:08 | INFO | Fetching | flow=CPI year=1989 years_chunk=[1988, 1989, 1990, 1991, 1992]
+2025-12-25 01:03:09 | SUCCESS | Done | flow=BOP year=1961 rows=2574 uri=s3://personal-projectbucket/imf/BOP/year=1961/BOP_1961.csv.gz step_s=1.38
+2025-12-25 01:03:09 | INFO | Fetching | flow=BOP year=1962 years_chunk=[1958, 1959, 1960, 1961, 1962]
+2025-12-25 01:03:10 | SUCCESS | Done | flow=CPI year=1989 rows=29970 uri=s3://personal-projectbucket/imf/CPI/year=1989/CPI_1989.csv.gz step_s=1.84
+2025-12-25 01:03:10 | INFO | Fetching | flow=CPI year=1990 years_chunk=[1988, 1989, 1990, 1991, 1992]
+2025-12-25 01:03:10 | SUCCESS | Done | flow=BOP year=1962 rows=2410 uri=s3://personal-projectbucket/imf/BOP/year=1962/BOP_1962.csv.gz step_s=1.43
+2025-12-25 01:03:10 | INFO | Fetching | flow=CPI year=1963 years_chunk=[1963, 1964, 1965, 1966, 1967]
+2025-12-25 01:03:12 | SUCCESS | Done | flow=CPI year=1990 rows=30568 uri=s3://personal-projectbucket/imf/CPI/year=1990/CPI_1990.csv.gz step_s=2.05
+2025-12-25 01:03:12 | INFO | Fetching | flow=CPI year=1991 years_chunk=[1988, 1989, 1990, 1991, 1992]
+2025-12-25 01:03:12 | SUCCESS | Done | flow=CPI year=1963 rows=20228 uri=s3://personal-projectbucket/imf/CPI/year=1963/CPI_1963.csv.gz step_s=1.72
+2025-12-25 01:03:12 | INFO | Fetching | flow=CPI year=1964 years_chunk=[1963, 1964, 1965, 1966, 1967]
+2025-12-25 01:03:13 | SUCCESS | Done | flow=CPI year=1964 rows=20396 uri=s3://personal-projectbucket/imf/CPI/year=1964/CPI_1964.csv.gz step_s=1.23
+2025-12-25 01:03:13 | INFO | Fetching | flow=CPI year=1965 years_chunk=[1963, 1964, 1965, 1966, 1967]
+2025-12-25 01:03:13 | SUCCESS | Done | flow=CPI year=1991 rows=32394 uri=s3://personal-projectbucket/imf/CPI/year=1991/CPI_1991.csv.gz step_s=1.67
+2025-12-25 01:03:13 | INFO | Fetching | flow=CPI year=1992 years_chunk=[1988, 1989, 1990, 1991, 1992]
+2025-12-25 01:03:15 | SUCCESS | Done | flow=CPI year=1965 rows=20566 uri=s3://personal-projectbucket/imf/CPI/year=1965/CPI_1965.csv.gz step_s=1.36
+2025-12-25 01:03:15 | INFO | Fetching | flow=CPI year=1966 years_chunk=[1963, 1964, 1965, 1966, 1967]
+2025-12-25 01:03:15 | SUCCESS | Done | flow=CPI year=1992 rows=33840 uri=s3://personal-projectbucket/imf/CPI/year=1992/CPI_1992.csv.gz step_s=1.80
+2025-12-25 01:03:16 | SUCCESS | Done | flow=CPI year=1966 rows=20724 uri=s3://personal-projectbucket/imf/CPI/year=1966/CPI_1966.csv.gz step_s=1.28
+2025-12-25 01:03:16 | INFO | Fetching | flow=CPI year=1967 years_chunk=[1963, 1964, 1965, 1966, 1967]
+2025-12-25 01:03:17 | SUCCESS | Done | flow=CPI year=1967 rows=21101 uri=s3://personal-projectbucket/imf/CPI/year=1967/CPI_1967.csv.gz step_s=1.24
+2025-12-25 01:04:14 | SUCCESS | Done | flow=IMTS year=1948 rows=19415 uri=s3://personal-projectbucket/imf/IMTS/year=1948/IMTS_1948.csv.gz step_s=70.66
+2025-12-25 01:04:14 | INFO | Fetching | flow=IMTS year=1949 years_chunk=[1948, 1949, 1950, 1951, 1952]
+2025-12-25 01:04:25 | SUCCESS | Done | flow=IMTS year=1949 rows=17491 uri=s3://personal-projectbucket/imf/IMTS/year=1949/IMTS_1949.csv.gz step_s=11.02
+2025-12-25 01:04:25 | INFO | Fetching | flow=IMTS year=1950 years_chunk=[1948, 1949, 1950, 1951, 1952]
+2025-12-25 01:04:31 | SUCCESS | Done | flow=IMTS year=1950 rows=18358 uri=s3://personal-projectbucket/imf/IMTS/year=1950/IMTS_1950.csv.gz step_s=5.85
+2025-12-25 01:04:31 | INFO | Fetching | flow=IMTS year=1951 years_chunk=[1948, 1949, 1950, 1951, 1952]
+2025-12-25 01:04:32 | SUCCESS | Done | flow=BOP year=2013 rows=395704 uri=s3://personal-projectbucket/imf/BOP/year=2013/BOP_2013.csv.gz step_s=88.83
+2025-12-25 01:04:32 | INFO | Fetching | flow=BOP year=2014 years_chunk=[2013, 2014, 2015, 2016, 2017]
+2025-12-25 01:04:32 | SUCCESS | Done | flow=BOP year=2023 rows=475674 uri=s3://personal-projectbucket/imf/BOP/year=2023/BOP_2023.csv.gz step_s=89.10
+2025-12-25 01:04:32 | INFO | Fetching | flow=BOP year=2024 years_chunk=[2023, 2024, 2025]
+2025-12-25 01:04:32 | SUCCESS | Done | flow=BOP year=2018 rows=493231 uri=s3://personal-projectbucket/imf/BOP/year=2018/BOP_2018.csv.gz step_s=89.42
+2025-12-25 01:04:32 | INFO | Fetching | flow=BOP year=2019 years_chunk=[2018, 2019, 2020, 2021, 2022]
+2025-12-25 01:04:37 | SUCCESS | Done | flow=IMTS year=1951 rows=19171 uri=s3://personal-projectbucket/imf/IMTS/year=1951/IMTS_1951.csv.gz step_s=6.60
+2025-12-25 01:04:37 | INFO | Fetching | flow=IMTS year=1952 years_chunk=[1948, 1949, 1950, 1951, 1952]
+2025-12-25 01:04:43 | SUCCESS | Done | flow=IMTS year=1952 rows=20775 uri=s3://personal-projectbucket/imf/IMTS/year=1952/IMTS_1952.csv.gz step_s=5.78
+2025-12-25 01:05:38 | SUCCESS | Done | flow=BOP year=2024 rows=447934 uri=s3://personal-projectbucket/imf/BOP/year=2024/BOP_2024.csv.gz step_s=66.08
+2025-12-25 01:05:38 | INFO | Fetching | flow=BOP year=2025 years_chunk=[2023, 2024, 2025]
+2025-12-25 01:05:50 | SUCCESS | Done | flow=BOP year=2014 rows=431639 uri=s3://personal-projectbucket/imf/BOP/year=2014/BOP_2014.csv.gz step_s=77.96
+2025-12-25 01:05:50 | INFO | Fetching | flow=BOP year=2015 years_chunk=[2013, 2014, 2015, 2016, 2017]
+2025-12-25 01:05:55 | SUCCESS | Done | flow=BOP year=2019 rows=496795 uri=s3://personal-projectbucket/imf/BOP/year=2019/BOP_2019.csv.gz step_s=83.17
+2025-12-25 01:05:55 | INFO | Fetching | flow=BOP year=2020 years_chunk=[2018, 2019, 2020, 2021, 2022]
+2025-12-25 01:06:00 | SUCCESS | Done | flow=BOP year=2025 rows=168195 uri=s3://personal-projectbucket/imf/BOP/year=2025/BOP_2025.csv.gz step_s=21.64
+2025-12-25 01:07:05 | SUCCESS | Done | flow=BOP year=2015 rows=445155 uri=s3://personal-projectbucket/imf/BOP/year=2015/BOP_2015.csv.gz step_s=75.23
+2025-12-25 01:07:05 | INFO | Fetching | flow=BOP year=2016 years_chunk=[2013, 2014, 2015, 2016, 2017]
+2025-12-25 01:07:17 | SUCCESS | Done | flow=BOP year=2020 rows=498069 uri=s3://personal-projectbucket/imf/BOP/year=2020/BOP_2020.csv.gz step_s=81.67
+2025-12-25 01:07:17 | INFO | Fetching | flow=BOP year=2021 years_chunk=[2018, 2019, 2020, 2021, 2022]
+2025-12-25 01:08:25 | SUCCESS | Done | flow=BOP year=2016 rows=460275 uri=s3://personal-projectbucket/imf/BOP/year=2016/BOP_2016.csv.gz step_s=80.09
+2025-12-25 01:08:25 | INFO | Fetching | flow=BOP year=2017 years_chunk=[2013, 2014, 2015, 2016, 2017]
+2025-12-25 01:08:37 | SUCCESS | Done | flow=BOP year=2021 rows=494078 uri=s3://personal-projectbucket/imf/BOP/year=2021/BOP_2021.csv.gz step_s=80.23
+2025-12-25 01:08:37 | INFO | Fetching | flow=BOP year=2022 years_chunk=[2018, 2019, 2020, 2021, 2022]
+2025-12-25 01:09:41 | SUCCESS | Done | flow=BOP year=2017 rows=479577 uri=s3://personal-projectbucket/imf/BOP/year=2017/BOP_2017.csv.gz step_s=76.10
+2025-12-25 01:09:55 | SUCCESS | Done | flow=BOP year=2022 rows=487824 uri=s3://personal-projectbucket/imf/BOP/year=2022/BOP_2022.csv.gz step_s=77.16
+2025-12-25 01:21:15 | INFO | IMF Pipeline start | run_id=20251225T012115Z flows=3 years=1948..2025 expected=234 chunk=10 workers=6 http_limit=4 s3_limit=6 gzip=True skip_exists=True manifest=True
+2025-12-25 01:21:16 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=1948/IMTS_1948.csv.gz
+2025-12-25 01:21:16 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=1949/IMTS_1949.csv.gz
+2025-12-25 01:21:16 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=1950/IMTS_1950.csv.gz
+2025-12-25 01:21:16 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=1951/IMTS_1951.csv.gz
+2025-12-25 01:21:16 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=1952/IMTS_1952.csv.gz
+2025-12-25 01:21:17 | SUCCESS | Uploaded | flow=BOP year=1948 rows=225 uri=s3://personal-projectbucket/imf/BOP/year=1948/BOP_1948.csv.gz step_s=1.64
+2025-12-25 01:21:18 | SUCCESS | Uploaded | flow=CPI year=1968 rows=21542 uri=s3://personal-projectbucket/imf/CPI/year=1968/CPI_1968.csv.gz step_s=2.38
+2025-12-25 01:21:23 | SUCCESS | Uploaded | flow=BOP year=1949 rows=226 uri=s3://personal-projectbucket/imf/BOP/year=1949/BOP_1949.csv.gz step_s=5.79
+2025-12-25 01:21:24 | SUCCESS | Uploaded | flow=CPI year=2008 rows=149821 uri=s3://personal-projectbucket/imf/CPI/year=2008/CPI_2008.csv.gz step_s=8.77
+2025-12-25 01:21:25 | SUCCESS | Uploaded | flow=CPI year=1969 rows=22216 uri=s3://personal-projectbucket/imf/CPI/year=1969/CPI_1969.csv.gz step_s=6.57
+2025-12-25 01:21:25 | SUCCESS | Uploaded | flow=BOP year=1950 rows=708 uri=s3://personal-projectbucket/imf/BOP/year=1950/BOP_1950.csv.gz step_s=1.61
+2025-12-25 01:21:30 | SUCCESS | Uploaded | flow=CPI year=2009 rows=152896 uri=s3://personal-projectbucket/imf/CPI/year=2009/CPI_2009.csv.gz step_s=6.03
+2025-12-25 01:21:31 | SUCCESS | Uploaded | flow=CPI year=1970 rows=23158 uri=s3://personal-projectbucket/imf/CPI/year=1970/CPI_1970.csv.gz step_s=6.00
+2025-12-25 01:21:31 | SUCCESS | Uploaded | flow=BOP year=1951 rows=708 uri=s3://personal-projectbucket/imf/BOP/year=1951/BOP_1951.csv.gz step_s=6.52
+2025-12-25 01:21:34 | SUCCESS | Uploaded | flow=IMTS year=1953 rows=21152 uri=s3://personal-projectbucket/imf/IMTS/year=1953/IMTS_1953.csv.gz step_s=17.98
+2025-12-25 01:21:35 | SUCCESS | Uploaded | flow=CPI year=1971 rows=23356 uri=s3://personal-projectbucket/imf/CPI/year=1971/CPI_1971.csv.gz step_s=4.84
+2025-12-25 01:21:36 | SUCCESS | Uploaded | flow=BOP year=1952 rows=977 uri=s3://personal-projectbucket/imf/BOP/year=1952/BOP_1952.csv.gz step_s=4.73
+2025-12-25 01:21:38 | SUCCESS | Uploaded | flow=CPI year=1972 rows=23389 uri=s3://personal-projectbucket/imf/CPI/year=1972/CPI_1972.csv.gz step_s=2.73
+2025-12-25 01:21:39 | SUCCESS | Uploaded | flow=BOP year=1953 rows=977 uri=s3://personal-projectbucket/imf/BOP/year=1953/BOP_1953.csv.gz step_s=2.65
+2025-12-25 01:21:39 | SUCCESS | Uploaded | flow=CPI year=2010 rows=170902 uri=s3://personal-projectbucket/imf/CPI/year=2010/CPI_2010.csv.gz step_s=8.51
+2025-12-25 01:21:40 | SUCCESS | Uploaded | flow=CPI year=1973 rows=23421 uri=s3://personal-projectbucket/imf/CPI/year=1973/CPI_1973.csv.gz step_s=1.63
+2025-12-25 01:21:40 | SUCCESS | Uploaded | flow=BOP year=1954 rows=977 uri=s3://personal-projectbucket/imf/BOP/year=1954/BOP_1954.csv.gz step_s=1.68
+2025-12-25 01:21:41 | SUCCESS | Uploaded | flow=IMTS year=1954 rows=20929 uri=s3://personal-projectbucket/imf/IMTS/year=1954/IMTS_1954.csv.gz step_s=6.55
+2025-12-25 01:21:42 | SUCCESS | Uploaded | flow=CPI year=1974 rows=23543 uri=s3://personal-projectbucket/imf/CPI/year=1974/CPI_1974.csv.gz step_s=2.20
+2025-12-25 01:21:42 | SUCCESS | Uploaded | flow=BOP year=1955 rows=977 uri=s3://personal-projectbucket/imf/BOP/year=1955/BOP_1955.csv.gz step_s=2.17
+2025-12-25 01:21:46 | SUCCESS | Uploaded | flow=CPI year=1975 rows=23702 uri=s3://personal-projectbucket/imf/CPI/year=1975/CPI_1975.csv.gz step_s=4.40
+2025-12-25 01:21:47 | SUCCESS | Uploaded | flow=BOP year=1956 rows=944 uri=s3://personal-projectbucket/imf/BOP/year=1956/BOP_1956.csv.gz step_s=4.47
+2025-12-25 01:21:47 | SUCCESS | Uploaded | flow=IMTS year=1955 rows=23288 uri=s3://personal-projectbucket/imf/IMTS/year=1955/IMTS_1955.csv.gz step_s=6.08
+2025-12-25 01:21:47 | SUCCESS | Uploaded | flow=CPI year=2011 rows=178330 uri=s3://personal-projectbucket/imf/CPI/year=2011/CPI_2011.csv.gz step_s=8.36
+2025-12-25 01:21:48 | SUCCESS | Uploaded | flow=BOP year=1957 rows=944 uri=s3://personal-projectbucket/imf/BOP/year=1957/BOP_1957.csv.gz step_s=0.77
+2025-12-25 01:21:48 | SUCCESS | Uploaded | flow=CPI year=1976 rows=24321 uri=s3://personal-projectbucket/imf/CPI/year=1976/CPI_1976.csv.gz step_s=1.71
+2025-12-25 01:21:53 | SUCCESS | Uploaded | flow=IMTS year=1956 rows=23980 uri=s3://personal-projectbucket/imf/IMTS/year=1956/IMTS_1956.csv.gz step_s=6.24
+2025-12-25 01:21:54 | SUCCESS | Uploaded | flow=CPI year=1977 rows=24456 uri=s3://personal-projectbucket/imf/CPI/year=1977/CPI_1977.csv.gz step_s=6.12
+2025-12-25 01:21:54 | SUCCESS | Uploaded | flow=CPI year=2012 rows=180678 uri=s3://personal-projectbucket/imf/CPI/year=2012/CPI_2012.csv.gz step_s=7.18
+2025-12-25 01:21:59 | SUCCESS | Uploaded | flow=IMTS year=1957 rows=24039 uri=s3://personal-projectbucket/imf/IMTS/year=1957/IMTS_1957.csv.gz step_s=5.83
+2025-12-25 01:22:01 | SUCCESS | Uploaded | flow=CPI year=2013 rows=185008 uri=s3://personal-projectbucket/imf/CPI/year=2013/CPI_2013.csv.gz step_s=6.55
+2025-12-25 01:22:05 | SUCCESS | Uploaded | flow=BOP year=1998 rows=159158 uri=s3://personal-projectbucket/imf/BOP/year=1998/BOP_1998.csv.gz step_s=49.36
+2025-12-25 01:22:07 | SUCCESS | Uploaded | flow=CPI year=2014 rows=188435 uri=s3://personal-projectbucket/imf/CPI/year=2014/CPI_2014.csv.gz step_s=6.34
+2025-12-25 01:24:48 | INFO | IMF Pipeline start | run_id=20251225T012448Z flows=3 years=1948..2025 expected=234 chunk=10 workers=6 http_limit=4 s3_limit=6 gzip=True skip_exists=True manifest=True
+2025-12-25 01:24:50 | SUCCESS | Uploaded | flow=BOP year=1958 rows=944 uri=s3://personal-projectbucket/imf/BOP/year=1958/BOP_1958.csv.gz step_s=1.69
+2025-12-25 01:24:51 | SUCCESS | Uploaded | flow=CPI year=1968 rows=21542 uri=s3://personal-projectbucket/imf/CPI/year=1968/CPI_1968.csv.gz step_s=3.12
+2025-12-25 01:24:52 | SUCCESS | Uploaded | flow=CPI year=1998 rows=85348 uri=s3://personal-projectbucket/imf/CPI/year=1998/CPI_1998.csv.gz step_s=4.28
+2025-12-25 01:24:53 | SUCCESS | Uploaded | flow=CPI year=1958 rows=19213 uri=s3://personal-projectbucket/imf/CPI/year=1958/CPI_1958.csv.gz step_s=4.41
+2025-12-25 01:24:53 | SUCCESS | Uploaded | flow=IMTS year=1948 rows=19415 uri=s3://personal-projectbucket/imf/IMTS/year=1948/IMTS_1948.csv.gz step_s=4.50
+2025-12-25 01:24:53 | SUCCESS | Uploaded | flow=BOP year=1959 rows=944 uri=s3://personal-projectbucket/imf/BOP/year=1959/BOP_1959.csv.gz step_s=3.24
+2025-12-25 01:24:54 | SUCCESS | Uploaded | flow=CPI year=1969 rows=22216 uri=s3://personal-projectbucket/imf/CPI/year=1969/CPI_1969.csv.gz step_s=2.25
+2025-12-25 01:24:54 | SUCCESS | Uploaded | flow=CPI year=1959 rows=19369 uri=s3://personal-projectbucket/imf/CPI/year=1959/CPI_1959.csv.gz step_s=1.43
+2025-12-25 01:24:55 | SUCCESS | Uploaded | flow=BOP year=1960 rows=1894 uri=s3://personal-projectbucket/imf/BOP/year=1960/BOP_1960.csv.gz step_s=2.12
+2025-12-25 01:24:56 | SUCCESS | Uploaded | flow=CPI year=1999 rows=88910 uri=s3://personal-projectbucket/imf/CPI/year=1999/CPI_1999.csv.gz step_s=3.57
+2025-12-25 01:24:56 | SUCCESS | Uploaded | flow=CPI year=1970 rows=23158 uri=s3://personal-projectbucket/imf/CPI/year=1970/CPI_1970.csv.gz step_s=2.49
+2025-12-25 01:24:56 | SUCCESS | Uploaded | flow=CPI year=1960 rows=19723 uri=s3://personal-projectbucket/imf/CPI/year=1960/CPI_1960.csv.gz step_s=2.17
+2025-12-25 01:24:57 | SUCCESS | Uploaded | flow=BOP year=1961 rows=2574 uri=s3://personal-projectbucket/imf/BOP/year=1961/BOP_1961.csv.gz step_s=1.33
+2025-12-25 01:24:57 | SUCCESS | Uploaded | flow=CPI year=2018 rows=193821 uri=s3://personal-projectbucket/imf/CPI/year=2018/CPI_2018.csv.gz step_s=8.49

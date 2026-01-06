@@ -1,0 +1,13 @@
+# Your pipeline deps (let Airflow constraints pin compatible versions)
+python-dotenv
+requests
+urllib3
+pandas
+dask
+loguru
+boto3
+
+# Airflow providers you listed
+apache-airflow-providers-http
+apache-airflow-providers-postgres
+apache-airflow-providers-smtp

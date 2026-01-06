@@ -1,0 +1,259 @@
+{"timestamp":"2025-12-25T03:32:14.724960Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2025-12-25T03:32:14.725414Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2025-12-25T03:32:14.978742Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag.py","lineno":4,"logger":"py.warnings"}
+{"timestamp":"2025-12-25T03:32:14.995496Z","level":"info","event":"2025-12-25 03:32:14 | INFO | IMF Pipeline start | run_id=20251225T033214Z flows=3 years=1948..2025 expected=234 chunk=5 workers=2 http_limit=2 s3_limit=2 gzip=False skip_exists=True manifest=True","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:32:15.413568Z","level":"info","event":"2025-12-25 03:32:15 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=2018/IMTS_2018.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:32:15.531742Z","level":"info","event":"2025-12-25 03:32:15 | INFO | Skip exists | s3://personal-projectbucket/imf/IMTS/year=2019/IMTS_2019.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:32:39.217534Z","level":"info","event":"Found credentials in environment variables.","logger":"botocore.credentials","filename":"credentials.py","lineno":1252}
+{"timestamp":"2025-12-25T03:32:40.439824Z","level":"info","event":"2025-12-25 03:32:40 | SUCCESS | Uploaded | flow=IMTS year=1948 rows=19415 uri=s3://personal-projectbucket/imf/IMTS/year=1948/IMTS_1948.csv step_s=25.43","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:32:45.556984Z","level":"info","event":"2025-12-25 03:32:45 | SUCCESS | Uploaded | flow=IMTS year=1949 rows=17491 uri=s3://personal-projectbucket/imf/IMTS/year=1949/IMTS_1949.csv step_s=4.93","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:32:51.281374Z","level":"info","event":"2025-12-25 03:32:51 | SUCCESS | Uploaded | flow=IMTS year=1950 rows=18358 uri=s3://personal-projectbucket/imf/IMTS/year=1950/IMTS_1950.csv step_s=5.57","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:32:56.579544Z","level":"info","event":"2025-12-25 03:32:56 | SUCCESS | Uploaded | flow=IMTS year=1951 rows=19171 uri=s3://personal-projectbucket/imf/IMTS/year=1951/IMTS_1951.csv step_s=5.04","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:33:02.108941Z","level":"info","event":"2025-12-25 03:33:02 | SUCCESS | Uploaded | flow=IMTS year=1952 rows=20775 uri=s3://personal-projectbucket/imf/IMTS/year=1952/IMTS_1952.csv step_s=5.42","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:33:23.444476Z","level":"info","event":"2025-12-25 03:33:23 | SUCCESS | Uploaded | flow=BOP year=1983 rows=74594 uri=s3://personal-projectbucket/imf/BOP/year=1983/BOP_1983.csv step_s=21.21","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:33:45.137047Z","level":"info","event":"2025-12-25 03:33:45 | SUCCESS | Uploaded | flow=BOP year=1984 rows=76626 uri=s3://personal-projectbucket/imf/BOP/year=1984/BOP_1984.csv step_s=21.31","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:34:19.652463Z","level":"info","event":"2025-12-25 03:34:19 | SUCCESS | Uploaded | flow=BOP year=1985 rows=76365 uri=s3://personal-projectbucket/imf/BOP/year=1985/BOP_1985.csv step_s=34.15","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:34:20.594403Z","level":"info","event":"2025-12-25 03:34:20 | SUCCESS | Uploaded | flow=IMTS year=2020 rows=1648317 uri=s3://personal-projectbucket/imf/IMTS/year=2020/IMTS_2020.csv step_s=124.99","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:34:41.974145Z","level":"info","event":"2025-12-25 03:34:41 | SUCCESS | Uploaded | flow=BOP year=1986 rows=78120 uri=s3://personal-projectbucket/imf/BOP/year=1986/BOP_1986.csv step_s=21.66","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:04.951481Z","level":"info","event":"2025-12-25 03:35:04 | SUCCESS | Uploaded | flow=BOP year=1987 rows=79395 uri=s3://personal-projectbucket/imf/BOP/year=1987/BOP_1987.csv step_s=22.75","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:07.930923Z","level":"info","event":"2025-12-25 03:35:07 | SUCCESS | Uploaded | flow=CPI year=1963 rows=20228 uri=s3://personal-projectbucket/imf/CPI/year=1963/CPI_1963.csv step_s=2.67","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:10.485111Z","level":"info","event":"2025-12-25 03:35:10 | SUCCESS | Uploaded | flow=CPI year=1964 rows=20396 uri=s3://personal-projectbucket/imf/CPI/year=1964/CPI_1964.csv step_s=2.43","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:14.113162Z","level":"info","event":"2025-12-25 03:35:14 | SUCCESS | Uploaded | flow=CPI year=1965 rows=20566 uri=s3://personal-projectbucket/imf/CPI/year=1965/CPI_1965.csv step_s=3.10","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:17.012683Z","level":"info","event":"2025-12-25 03:35:17 | SUCCESS | Uploaded | flow=CPI year=1966 rows=20724 uri=s3://personal-projectbucket/imf/CPI/year=1966/CPI_1966.csv step_s=2.55","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:19.893653Z","level":"info","event":"2025-12-25 03:35:19 | SUCCESS | Uploaded | flow=CPI year=1967 rows=21101 uri=s3://personal-projectbucket/imf/CPI/year=1967/CPI_1967.csv step_s=2.70","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:34.285858Z","level":"info","event":"2025-12-25 03:35:34 | SUCCESS | Uploaded | flow=CPI year=2018 rows=193821 uri=s3://personal-projectbucket/imf/CPI/year=2018/CPI_2018.csv step_s=14.22","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:45.817967Z","level":"info","event":"2025-12-25 03:35:45 | SUCCESS | Uploaded | flow=CPI year=2019 rows=193375 uri=s3://personal-projectbucket/imf/CPI/year=2019/CPI_2019.csv step_s=11.02","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:35:57.487084Z","level":"info","event":"2025-12-25 03:35:57 | SUCCESS | Uploaded | flow=CPI year=2020 rows=189584 uri=s3://personal-projectbucket/imf/CPI/year=2020/CPI_2020.csv step_s=11.16","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:32.639999Z","level":"info","event":"2025-12-25 03:36:32 | SUCCESS | Uploaded | flow=CPI year=2021 rows=186606 uri=s3://personal-projectbucket/imf/CPI/year=2021/CPI_2021.csv step_s=34.89","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:35.662443Z","level":"info","event":"2025-12-25 03:36:35 | SUCCESS | Uploaded | flow=IMTS year=2021 rows=1696972 uri=s3://personal-projectbucket/imf/IMTS/year=2021/IMTS_2021.csv step_s=133.99","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:44.426579Z","level":"info","event":"2025-12-25 03:36:44 | SUCCESS | Uploaded | flow=CPI year=2022 rows=184656 uri=s3://personal-projectbucket/imf/CPI/year=2022/CPI_2022.csv step_s=11.10","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:47.966061Z","level":"info","event":"2025-12-25 03:36:47 | SUCCESS | Uploaded | flow=CPI year=1983 rows=27100 uri=s3://personal-projectbucket/imf/CPI/year=1983/CPI_1983.csv step_s=3.31","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:51.533671Z","level":"info","event":"2025-12-25 03:36:51 | SUCCESS | Uploaded | flow=CPI year=1984 rows=27582 uri=s3://personal-projectbucket/imf/CPI/year=1984/CPI_1984.csv step_s=3.31","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:54.938823Z","level":"info","event":"2025-12-25 03:36:54 | SUCCESS | Uploaded | flow=CPI year=1985 rows=28261 uri=s3://personal-projectbucket/imf/CPI/year=1985/CPI_1985.csv step_s=3.29","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:36:58.602270Z","level":"info","event":"2025-12-25 03:36:58 | SUCCESS | Uploaded | flow=CPI year=1986 rows=28909 uri=s3://personal-projectbucket/imf/CPI/year=1986/CPI_1986.csv step_s=3.55","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:02.125192Z","level":"info","event":"2025-12-25 03:37:02 | SUCCESS | Uploaded | flow=CPI year=1987 rows=28957 uri=s3://personal-projectbucket/imf/CPI/year=1987/CPI_1987.csv step_s=3.32","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:05.058931Z","level":"info","event":"2025-12-25 03:37:05 | SUCCESS | Uploaded | flow=CPI year=1978 rows=24458 uri=s3://personal-projectbucket/imf/CPI/year=1978/CPI_1978.csv step_s=2.79","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:07.597118Z","level":"info","event":"2025-12-25 03:37:07 | SUCCESS | Uploaded | flow=CPI year=1979 rows=24667 uri=s3://personal-projectbucket/imf/CPI/year=1979/CPI_1979.csv step_s=2.36","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:10.717602Z","level":"info","event":"2025-12-25 03:37:10 | SUCCESS | Uploaded | flow=CPI year=1980 rows=26185 uri=s3://personal-projectbucket/imf/CPI/year=1980/CPI_1980.csv step_s=2.96","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:13.818764Z","level":"info","event":"2025-12-25 03:37:13 | SUCCESS | Uploaded | flow=CPI year=1981 rows=26646 uri=s3://personal-projectbucket/imf/CPI/year=1981/CPI_1981.csv step_s=2.98","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:16.676349Z","level":"info","event":"2025-12-25 03:37:16 | SUCCESS | Uploaded | flow=CPI year=1982 rows=26714 uri=s3://personal-projectbucket/imf/CPI/year=1982/CPI_1982.csv step_s=2.75","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:18.313437Z","level":"info","event":"2025-12-25 03:37:18 | SUCCESS | Uploaded | flow=BOP year=1963 rows=2410 uri=s3://personal-projectbucket/imf/BOP/year=1963/BOP_1963.csv step_s=1.51","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:19.893729Z","level":"info","event":"2025-12-25 03:37:19 | SUCCESS | Uploaded | flow=BOP year=1964 rows=2415 uri=s3://personal-projectbucket/imf/BOP/year=1964/BOP_1964.csv step_s=1.46","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:21.600689Z","level":"info","event":"2025-12-25 03:37:21 | SUCCESS | Uploaded | flow=BOP year=1965 rows=2589 uri=s3://personal-projectbucket/imf/BOP/year=1965/BOP_1965.csv step_s=1.61","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:24.006067Z","level":"info","event":"2025-12-25 03:37:24 | SUCCESS | Uploaded | flow=BOP year=1966 rows=2589 uri=s3://personal-projectbucket/imf/BOP/year=1966/BOP_1966.csv step_s=2.29","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:37:26.366113Z","level":"info","event":"2025-12-25 03:37:26 | SUCCESS | Uploaded | flow=BOP year=1967 rows=5045 uri=s3://personal-projectbucket/imf/BOP/year=1967/BOP_1967.csv step_s=2.27","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:01.247497Z","level":"info","event":"2025-12-25 03:39:01 | SUCCESS | Uploaded | flow=IMTS year=2022 rows=1703770 uri=s3://personal-projectbucket/imf/IMTS/year=2022/IMTS_2022.csv step_s=144.66","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:02.689477Z","level":"info","event":"2025-12-25 03:39:02 | INFO | Skip exists | s3://personal-projectbucket/imf/BOP/year=1953/BOP_1953.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:02.814191Z","level":"info","event":"2025-12-25 03:39:02 | INFO | Skip exists | s3://personal-projectbucket/imf/BOP/year=1954/BOP_1954.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:02.926717Z","level":"info","event":"2025-12-25 03:39:02 | INFO | Skip exists | s3://personal-projectbucket/imf/BOP/year=1955/BOP_1955.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:03.038839Z","level":"info","event":"2025-12-25 03:39:03 | INFO | Skip exists | s3://personal-projectbucket/imf/BOP/year=1956/BOP_1956.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:03.166338Z","level":"info","event":"2025-12-25 03:39:03 | INFO | Skip exists | s3://personal-projectbucket/imf/BOP/year=1957/BOP_1957.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:07.310167Z","level":"info","event":"2025-12-25 03:39:07 | SUCCESS | Uploaded | flow=BOP year=2018 rows=493231 uri=s3://personal-projectbucket/imf/BOP/year=2018/BOP_2018.csv step_s=100.83","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:17.031859Z","level":"info","event":"2025-12-25 03:39:17 | SUCCESS | Uploaded | flow=CPI year=2013 rows=185008 uri=s3://personal-projectbucket/imf/CPI/year=2013/CPI_2013.csv step_s=13.78","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:28.241641Z","level":"info","event":"2025-12-25 03:39:28 | SUCCESS | Uploaded | flow=CPI year=2014 rows=188435 uri=s3://personal-projectbucket/imf/CPI/year=2014/CPI_2014.csv step_s=11.00","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:41.089068Z","level":"info","event":"2025-12-25 03:39:41 | SUCCESS | Uploaded | flow=CPI year=2015 rows=192865 uri=s3://personal-projectbucket/imf/CPI/year=2015/CPI_2015.csv step_s=12.69","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:39:53.195241Z","level":"info","event":"2025-12-25 03:39:53 | SUCCESS | Uploaded | flow=CPI year=2016 rows=193918 uri=s3://personal-projectbucket/imf/CPI/year=2016/CPI_2016.csv step_s=11.94","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:40:06.448651Z","level":"info","event":"2025-12-25 03:40:06 | SUCCESS | Uploaded | flow=CPI year=2017 rows=193051 uri=s3://personal-projectbucket/imf/CPI/year=2017/CPI_2017.csv step_s=13.06","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:40:38.730327Z","level":"info","event":"2025-12-25 03:40:38 | SUCCESS | Uploaded | flow=BOP year=2019 rows=496795 uri=s3://personal-projectbucket/imf/BOP/year=2019/BOP_2019.csv step_s=90.38","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:42:16.616370Z","level":"info","event":"2025-12-25 03:42:16 | SUCCESS | Uploaded | flow=BOP year=2020 rows=498069 uri=s3://personal-projectbucket/imf/BOP/year=2020/BOP_2020.csv step_s=96.57","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:44:05.703010Z","level":"info","event":"2025-12-25 03:44:05 | SUCCESS | Uploaded | flow=BOP year=2021 rows=494078 uri=s3://personal-projectbucket/imf/BOP/year=2021/BOP_2021.csv step_s=108.16","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:45:09.919653Z","level":"info","event":"2025-12-25 03:45:09 | SUCCESS | Uploaded | flow=IMTS year=2003 rows=1560885 uri=s3://personal-projectbucket/imf/IMTS/year=2003/IMTS_2003.csv step_s=303.21","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:45:46.886032Z","level":"info","event":"2025-12-25 03:45:46 | SUCCESS | Uploaded | flow=BOP year=2022 rows=487824 uri=s3://personal-projectbucket/imf/BOP/year=2022/BOP_2022.csv step_s=100.32","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:46:14.780693Z","level":"info","event":"2025-12-25 03:46:14 | SUCCESS | Uploaded | flow=CPI year=2008 rows=149821 uri=s3://personal-projectbucket/imf/CPI/year=2008/CPI_2008.csv step_s=27.48","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:46:36.395555Z","level":"info","event":"2025-12-25 03:46:36 | SUCCESS | Uploaded | flow=CPI year=2009 rows=152896 uri=s3://personal-projectbucket/imf/CPI/year=2009/CPI_2009.csv step_s=21.49","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:47:13.183883Z","level":"info","event":"2025-12-25 03:47:13 | SUCCESS | Uploaded | flow=CPI year=2010 rows=170902 uri=s3://personal-projectbucket/imf/CPI/year=2010/CPI_2010.csv step_s=36.63","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:47:48.727458Z","level":"info","event":"2025-12-25 03:47:48 | SUCCESS | Uploaded | flow=CPI year=2011 rows=178330 uri=s3://personal-projectbucket/imf/CPI/year=2011/CPI_2011.csv step_s=35.31","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:48:03.780713Z","level":"info","event":"2025-12-25 03:48:03 | SUCCESS | Uploaded | flow=CPI year=2012 rows=180678 uri=s3://personal-projectbucket/imf/CPI/year=2012/CPI_2012.csv step_s=14.89","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:48:16.113551Z","level":"info","event":"2025-12-25 03:48:16 | SUCCESS | Uploaded | flow=CPI year=2003 rows=107295 uri=s3://personal-projectbucket/imf/CPI/year=2003/CPI_2003.csv step_s=12.16","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:48:25.274683Z","level":"info","event":"2025-12-25 03:48:25 | SUCCESS | Uploaded | flow=CPI year=2004 rows=109891 uri=s3://personal-projectbucket/imf/CPI/year=2004/CPI_2004.csv step_s=9.02","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:48:39.072732Z","level":"info","event":"2025-12-25 03:48:39 | SUCCESS | Uploaded | flow=CPI year=2005 rows=127790 uri=s3://personal-projectbucket/imf/CPI/year=2005/CPI_2005.csv step_s=13.65","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:48:50.542702Z","level":"info","event":"2025-12-25 03:48:50 | SUCCESS | Uploaded | flow=CPI year=2006 rows=138693 uri=s3://personal-projectbucket/imf/CPI/year=2006/CPI_2006.csv step_s=11.33","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:48:59.980098Z","level":"info","event":"2025-12-25 03:48:59 | SUCCESS | Uploaded | flow=CPI year=2007 rows=145168 uri=s3://personal-projectbucket/imf/CPI/year=2007/CPI_2007.csv step_s=9.32","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.930140Z","level":"info","event":"2025-12-25 03:52:34 | ERROR | HTTP failed | flow=IMTS year=2004 url=https://api.imf.org/external/sdmx/2.1/data/IMF.STA,IMTS,latest/all/all?startPeriod=2004&endPeriod=2004 err=('Connection broken: IncompleteRead(369 bytes read, 5775 more expected)', IncompleteRead(369 bytes read, 5775 more expected))","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.933734Z","level":"info","event":"Traceback (most recent call last):","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.937700Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.937810Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py\", line 779, in _error_catcher","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.937870Z","level":"info","event":"    yield","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.937914Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py\", line 1251, in read_chunked","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.937956Z","level":"info","event":"    chunk = self._handle_chunk(amt)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.937998Z","level":"info","event":"            │    │             └ 10240","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938069Z","level":"info","event":"            │    └ <function HTTPResponse._handle_chunk at 0xffff7cbb0ea0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938118Z","level":"info","event":"            └ <urllib3.response.HTTPResponse object at 0xffff554f18d0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938159Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py\", line 1197, in _handle_chunk","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938199Z","level":"info","event":"    returned_chunk = self._fp._safe_read(self.chunk_left)  # type: ignore[union-attr]","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938245Z","level":"info","event":"                     │    │   │          │    └ 6144","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938289Z","level":"info","event":"                     │    │   │          └ <urllib3.response.HTTPResponse object at 0xffff554f18d0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938330Z","level":"info","event":"                     │    │   └ <function HTTPResponse._safe_read at 0xffff81c3dc60>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938376Z","level":"info","event":"                     │    └ <http.client.HTTPResponse object at 0xffff60a56950>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938415Z","level":"info","event":"                     └ <urllib3.response.HTTPResponse object at 0xffff554f18d0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938454Z","level":"info","event":"  File \"/usr/python/lib/python3.12/http/client.py\", line 644, in _safe_read","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938494Z","level":"info","event":"    raise IncompleteRead(data, amt-len(data))","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938533Z","level":"info","event":"          │              │     │       └ b'\\xd0\\xae\\xa0\\xfa\\x81\\xaa0\\xf4n\\xf3\\xc2Q`1*\\xb5x\\xa9\\x96\\x98\\x08\\x9a\\xb8\\xc1\\xff[}\\xd0\\x03E\\xe0\\xd3\\x0bQ\\xb7\\xaa\\xfe\\xb6-\\x9...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938578Z","level":"info","event":"          │              │     └ 6144","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938650Z","level":"info","event":"          │              └ b'\\xd0\\xae\\xa0\\xfa\\x81\\xaa0\\xf4n\\xf3\\xc2Q`1*\\xb5x\\xa9\\x96\\x98\\x08\\x9a\\xb8\\xc1\\xff[}\\xd0\\x03E\\xe0\\xd3\\x0bQ\\xb7\\xaa\\xfe\\xb6-\\x9...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938704Z","level":"info","event":"          └ <class 'http.client.IncompleteRead'>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938747Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938790Z","level":"info","event":"http.client.IncompleteRead: IncompleteRead(369 bytes read, 5775 more expected)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938823Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938857Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938890Z","level":"info","event":"The above exception was the direct cause of the following exception:","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938925Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938957Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.938992Z","level":"info","event":"Traceback (most recent call last):","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939029Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939062Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/requests/models.py\", line 820, in generate","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939105Z","level":"info","event":"    yield from self.raw.stream(chunk_size, decode_content=True)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939261Z","level":"info","event":"               │    │   │      └ 10240","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939301Z","level":"info","event":"               │    │   └ <function HTTPResponse.stream at 0xffff7cbb0900>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939341Z","level":"info","event":"               │    └ <urllib3.response.HTTPResponse object at 0xffff554f18d0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939374Z","level":"info","event":"               └ <Response [200]>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939409Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py\", line 1088, in stream","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939449Z","level":"info","event":"    yield from self.read_chunked(amt, decode_content=decode_content)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939489Z","level":"info","event":"               │    │            │                   └ True","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939527Z","level":"info","event":"               │    │            └ 10240","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939567Z","level":"info","event":"               │    └ <function HTTPResponse.read_chunked at 0xffff7cbb0f40>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939606Z","level":"info","event":"               └ <urllib3.response.HTTPResponse object at 0xffff554f18d0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939644Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py\", line 1231, in read_chunked","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939713Z","level":"info","event":"    with self._error_catcher():","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939748Z","level":"info","event":"         │    └ <function HTTPResponse._error_catcher at 0xffff7cbb05e0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939788Z","level":"info","event":"         └ <urllib3.response.HTTPResponse object at 0xffff554f18d0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939865Z","level":"info","event":"  File \"/usr/python/lib/python3.12/contextlib.py\", line 158, in __exit__","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939911Z","level":"info","event":"    self.gen.throw(value)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.939959Z","level":"info","event":"    │    │   │     └ IncompleteRead(369 bytes read, 5775 more expected)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940005Z","level":"info","event":"    │    │   └ <method 'throw' of 'generator' objects>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940043Z","level":"info","event":"    │    └ <generator object HTTPResponse._error_catcher at 0xfffefc36f6a0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940097Z","level":"info","event":"    └ <contextlib._GeneratorContextManager object at 0xffff554f1a00>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940132Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py\", line 806, in _error_catcher","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940166Z","level":"info","event":"    raise ProtocolError(f\"Connection broken: {e!r}\", e) from e","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940204Z","level":"info","event":"          └ <class 'urllib3.exceptions.ProtocolError'>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940241Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940279Z","level":"info","event":"urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(369 bytes read, 5775 more expected)', IncompleteRead(369 bytes read, 5775 more expected))","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940311Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940342Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940523Z","level":"info","event":"During handling of the above exception, another exception occurred:","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940561Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940595Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940628Z","level":"info","event":"Traceback (most recent call last):","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940670Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940709Z","level":"info","event":"  File \"/usr/python/lib/python3.12/threading.py\", line 1032, in _bootstrap","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940742Z","level":"info","event":"    self._bootstrap_inner()","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940777Z","level":"info","event":"    │    └ <function Thread._bootstrap_inner at 0xffff84564f40>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940819Z","level":"info","event":"    └ <Thread(ThreadPoolExecutor-1_0, started 281472390984032)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940854Z","level":"info","event":"  File \"/usr/python/lib/python3.12/threading.py\", line 1075, in _bootstrap_inner","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940887Z","level":"info","event":"    self.run()","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940916Z","level":"info","event":"    │    └ <function Thread.run at 0xffff84564c20>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940950Z","level":"info","event":"    └ <Thread(ThreadPoolExecutor-1_0, started 281472390984032)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.940981Z","level":"info","event":"  File \"/usr/python/lib/python3.12/threading.py\", line 1012, in run","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941019Z","level":"info","event":"    self._target(*self._args, **self._kwargs)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941060Z","level":"info","event":"    │    │        │    │        │    └ {}","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941125Z","level":"info","event":"    │    │        │    │        └ <Thread(ThreadPoolExecutor-1_0, started 281472390984032)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941158Z","level":"info","event":"    │    │        │    └ (<weakref at 0xffff5fd532e0; to 'ThreadPoolExecutor' at 0xffff5fed94c0>, <_queue.SimpleQueue object at 0xffff5c49ae30>, None,...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941193Z","level":"info","event":"    │    │        └ <Thread(ThreadPoolExecutor-1_0, started 281472390984032)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941225Z","level":"info","event":"    │    └ <function _worker at 0xffff7ec89d00>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941258Z","level":"info","event":"    └ <Thread(ThreadPoolExecutor-1_0, started 281472390984032)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941290Z","level":"info","event":"  File \"/usr/python/lib/python3.12/concurrent/futures/thread.py\", line 93, in _worker","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941326Z","level":"info","event":"    work_item.run()","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941366Z","level":"info","event":"    │         └ <function _WorkItem.run at 0xffff7ec89e40>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941411Z","level":"info","event":"    └ <concurrent.futures.thread._WorkItem object at 0xffff5c4d5e20>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941451Z","level":"info","event":"  File \"/usr/python/lib/python3.12/concurrent/futures/thread.py\", line 59, in run","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941492Z","level":"info","event":"    result = self.fn(*self.args, **self.kwargs)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941535Z","level":"info","event":"             │    │   │    │       │    └ {}","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941577Z","level":"info","event":"             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0xffff5c4d5e20>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941621Z","level":"info","event":"             │    │   │    └ ([('process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d1d98546a', (<Task 'process_flow_year_chunk-b2bf6329-a097-439d-aba6-d5...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941679Z","level":"info","event":"             │    │   └ <concurrent.futures.thread._WorkItem object at 0xffff5c4d5e20>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941724Z","level":"info","event":"             │    └ <function batch_execute_tasks at 0xffff78d78220>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941766Z","level":"info","event":"             └ <concurrent.futures.thread._WorkItem object at 0xffff5c4d5e20>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941811Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/dask/local.py\", line 270, in batch_execute_tasks","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941852Z","level":"info","event":"    return [execute_task(*a) for a in it]","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941894Z","level":"info","event":"            │             │      │    └ [('process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d1d98546a', (<Task 'process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941936Z","level":"info","event":"            │             │      └ ('process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d1d98546a', (<Task 'process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.941979Z","level":"info","event":"            │             └ ('process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d1d98546a', (<Task 'process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942059Z","level":"info","event":"            └ <function execute_task at 0xffff78d78180>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942102Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/dask/local.py\", line 256, in execute_task","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942143Z","level":"info","event":"    result = task(data)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942186Z","level":"info","event":"             │    └ {}","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942230Z","level":"info","event":"             └ <Task 'process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d1d98546a' process_flow_year_chunk(...)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942290Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/dask/_task_spec.py\", line 759, in __call__","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942336Z","level":"info","event":"    return self.func(*new_argspec)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942386Z","level":"info","event":"           │    │     └ ('IMTS', 'IMF.STA,IMTS,latest', [2003, 2004, 2005, 2006, 2007], IMFConfig(key='all', sub_key='all', base_url='https://api.imf...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942428Z","level":"info","event":"           │    └ <member 'func' of 'Task' objects>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942489Z","level":"info","event":"           └ <Task 'process_flow_year_chunk-b2bf6329-a097-439d-aba6-d52d1d98546a' process_flow_year_chunk(...)>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942537Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942579Z","level":"info","event":"  File \"/opt/airflow/dags/pipelines/imf/pipeline.py\", line 69, in process_flow_year_chunk","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942622Z","level":"info","event":"    xml_bytes = fetch_bytes(url, rt, context=f\"flow={flow_name} year={year}\")","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942674Z","level":"info","event":"                │           │    │                   │                └ 2004","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942720Z","level":"info","event":"                │           │    │                   └ 'IMTS'","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942763Z","level":"info","event":"                │           │    └ RuntimeConfig(scheduler='threads', num_workers=2, year_chunk_size=5, max_concurrent_http=2, max_concurrent_s3=2, total_retrie...","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942837Z","level":"info","event":"                │           └ 'https://api.imf.org/external/sdmx/2.1/data/IMF.STA,IMTS,latest/all/all?startPeriod=2004&endPeriod=2004'","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942880Z","level":"info","event":"                └ <function fetch_bytes at 0xffff78df2980>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942922Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.942964Z","level":"info","event":"> File \"/opt/airflow/dags/pipelines/common/http_client.py\", line 56, in fetch_bytes","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943008Z","level":"info","event":"    resp = session.get(url, timeout=timeout)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943051Z","level":"info","event":"           │       │   │            └ (10.0, 120.0)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943092Z","level":"info","event":"           │       │   └ 'https://api.imf.org/external/sdmx/2.1/data/IMF.STA,IMTS,latest/all/all?startPeriod=2004&endPeriod=2004'","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943136Z","level":"info","event":"           │       └ <function Session.get at 0xffff7cb7d800>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943210Z","level":"info","event":"           └ <requests.sessions.Session object at 0xffff5ff19af0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943253Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943295Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py\", line 602, in get","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943339Z","level":"info","event":"    return self.request(\"GET\", url, **kwargs)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943381Z","level":"info","event":"           │    │              │      └ {'timeout': (10.0, 120.0), 'allow_redirects': True}","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943422Z","level":"info","event":"           │    │              └ 'https://api.imf.org/external/sdmx/2.1/data/IMF.STA,IMTS,latest/all/all?startPeriod=2004&endPeriod=2004'","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943465Z","level":"info","event":"           │    └ <function Session.request at 0xffff7cb7d760>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943505Z","level":"info","event":"           └ <requests.sessions.Session object at 0xffff5ff19af0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943544Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py\", line 589, in request","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943587Z","level":"info","event":"    resp = self.send(prep, **send_kwargs)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943628Z","level":"info","event":"           │    │    │       └ {'timeout': (10.0, 120.0), 'allow_redirects': True, 'proxies': OrderedDict(), 'stream': False, 'verify': True, 'cert': None}","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943674Z","level":"info","event":"           │    │    └ <PreparedRequest [GET]>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.943808Z","level":"info","event":"           │    └ <function Session.send at 0xffff7cb7dc60>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.944717Z","level":"info","event":"           └ <requests.sessions.Session object at 0xffff5ff19af0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.945465Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py\", line 746, in send","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.948740Z","level":"info","event":"    r.content","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.950731Z","level":"info","event":"    │ └ <property object at 0xffff7cb56ca0>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.950971Z","level":"info","event":"    └ <Response [200]>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.951208Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/requests/models.py\", line 902, in content","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.951701Z","level":"info","event":"    self._content = b\"\".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b\"\"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.952703Z","level":"info","event":"    │    │                   │    │            └ 10240","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.954708Z","level":"info","event":"    │    │                   │    └ <function Response.iter_content at 0xffff7cb7c040>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.955258Z","level":"info","event":"    │    │                   └ <Response [200]>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.956801Z","level":"info","event":"    │    └ False","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.958678Z","level":"info","event":"    └ <Response [200]>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.958809Z","level":"info","event":"  File \"/home/airflow/.local/lib/python3.12/site-packages/requests/models.py\", line 822, in generate","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.958866Z","level":"info","event":"    raise ChunkedEncodingError(e)","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.958921Z","level":"info","event":"          └ <class 'requests.exceptions.ChunkedEncodingError'>","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.958980Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:52:34.959032Z","level":"info","event":"requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(369 bytes read, 5775 more expected)', IncompleteRead(369 bytes read, 5775 more expected))","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:54:57.546610Z","level":"info","event":"2025-12-25 03:54:57 | SUCCESS | Uploaded | flow=IMTS year=2013 rows=1705543 uri=s3://personal-projectbucket/imf/IMTS/year=2013/IMTS_2013.csv step_s=237.99","logger":"task.stdout"}
+{"timestamp":"2025-12-25T03:58:02.406400Z","level":"info","event":"2025-12-25 03:58:02 | SUCCESS | Uploaded | flow=IMTS year=2005 rows=1585136 uri=s3://personal-projectbucket/imf/IMTS/year=2005/IMTS_2005.csv step_s=327.18","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:00:29.778359Z","level":"info","event":"2025-12-25 04:00:29 | SUCCESS | Uploaded | flow=IMTS year=2014 rows=1715997 uri=s3://personal-projectbucket/imf/IMTS/year=2014/IMTS_2014.csv step_s=330.58","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:03:12.734611Z","level":"info","event":"2025-12-25 04:03:12 | SUCCESS | Uploaded | flow=IMTS year=2006 rows=1620995 uri=s3://personal-projectbucket/imf/IMTS/year=2006/IMTS_2006.csv step_s=308.88","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:05:51.129751Z","level":"info","event":"2025-12-25 04:05:51 | SUCCESS | Uploaded | flow=IMTS year=2015 rows=1719785 uri=s3://personal-projectbucket/imf/IMTS/year=2015/IMTS_2015.csv step_s=319.60","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:23.629578Z","level":"info","event":"2025-12-25 04:08:23 | SUCCESS | Uploaded | flow=IMTS year=2007 rows=1641435 uri=s3://personal-projectbucket/imf/IMTS/year=2007/IMTS_2007.csv step_s=309.44","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:32.644210Z","level":"info","event":"2025-12-25 04:08:32 | SUCCESS | Uploaded | flow=CPI year=1988 rows=29455 uri=s3://personal-projectbucket/imf/CPI/year=1988/CPI_1988.csv step_s=7.44","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:36.507365Z","level":"info","event":"2025-12-25 04:08:36 | SUCCESS | Uploaded | flow=CPI year=1989 rows=29970 uri=s3://personal-projectbucket/imf/CPI/year=1989/CPI_1989.csv step_s=3.68","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:41.523824Z","level":"info","event":"2025-12-25 04:08:41 | SUCCESS | Uploaded | flow=CPI year=1990 rows=30568 uri=s3://personal-projectbucket/imf/CPI/year=1990/CPI_1990.csv step_s=4.88","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:45.751921Z","level":"info","event":"2025-12-25 04:08:45 | SUCCESS | Uploaded | flow=CPI year=1991 rows=32394 uri=s3://personal-projectbucket/imf/CPI/year=1991/CPI_1991.csv step_s=4.04","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:49.979299Z","level":"info","event":"2025-12-25 04:08:49 | SUCCESS | Uploaded | flow=CPI year=1992 rows=33840 uri=s3://personal-projectbucket/imf/CPI/year=1992/CPI_1992.csv step_s=4.07","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:50.361611Z","level":"info","event":"2025-12-25 04:08:50 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=1973/CPI_1973.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:50.705990Z","level":"info","event":"2025-12-25 04:08:50 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=1974/CPI_1974.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:50.951719Z","level":"info","event":"2025-12-25 04:08:50 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=1975/CPI_1975.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:51.126833Z","level":"info","event":"2025-12-25 04:08:51 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=1976/CPI_1976.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:51.278192Z","level":"info","event":"2025-12-25 04:08:51 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=1977/CPI_1977.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:51.403385Z","level":"info","event":"2025-12-25 04:08:51 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=2023/CPI_2023.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:51.540288Z","level":"info","event":"2025-12-25 04:08:51 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=2024/CPI_2024.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:08:51.653054Z","level":"info","event":"2025-12-25 04:08:51 | INFO | Skip exists | s3://personal-projectbucket/imf/CPI/year=2025/CPI_2025.csv","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:10:56.629649Z","level":"info","event":"2025-12-25 04:10:56 | SUCCESS | Uploaded | flow=IMTS year=2016 rows=1688887 uri=s3://personal-projectbucket/imf/IMTS/year=2016/IMTS_2016.csv step_s=303.97","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:11:34.940437Z","level":"info","event":"2025-12-25 04:11:34 | SUCCESS | Uploaded | flow=IMTS year=1993 rows=1100682 uri=s3://personal-projectbucket/imf/IMTS/year=1993/IMTS_1993.csv step_s=163.20","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:13:27.155032Z","level":"info","event":"2025-12-25 04:13:27 | SUCCESS | Uploaded | flow=IMTS year=1994 rows=1158857 uri=s3://personal-projectbucket/imf/IMTS/year=1994/IMTS_1994.csv step_s=111.26","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:14:06.442669Z","level":"info","event":"2025-12-25 04:14:06 | SUCCESS | Uploaded | flow=IMTS year=2017 rows=1682289 uri=s3://personal-projectbucket/imf/IMTS/year=2017/IMTS_2017.csv step_s=188.41","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:16:44.127970Z","level":"info","event":"2025-12-25 04:16:44 | SUCCESS | Uploaded | flow=IMTS year=1968 rows=374250 uri=s3://personal-projectbucket/imf/IMTS/year=1968/IMTS_1968.csv step_s=156.11","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:17:13.300519Z","level":"info","event":"2025-12-25 04:17:13 | SUCCESS | Uploaded | flow=IMTS year=1995 rows=1198836 uri=s3://personal-projectbucket/imf/IMTS/year=1995/IMTS_1995.csv step_s=225.09","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:17:24.321134Z","level":"info","event":"2025-12-25 04:17:24 | SUCCESS | Uploaded | flow=IMTS year=1969 rows=387849 uri=s3://personal-projectbucket/imf/IMTS/year=1969/IMTS_1969.csv step_s=39.59","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:18:07.114869Z","level":"info","event":"2025-12-25 04:18:07 | SUCCESS | Uploaded | flow=IMTS year=1970 rows=415382 uri=s3://personal-projectbucket/imf/IMTS/year=1970/IMTS_1970.csv step_s=42.19","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:18:44.907945Z","level":"info","event":"2025-12-25 04:18:44 | SUCCESS | Uploaded | flow=IMTS year=1971 rows=441481 uri=s3://personal-projectbucket/imf/IMTS/year=1971/IMTS_1971.csv step_s=37.20","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:19:38.533182Z","level":"info","event":"2025-12-25 04:19:38 | SUCCESS | Uploaded | flow=IMTS year=1996 rows=1256273 uri=s3://personal-projectbucket/imf/IMTS/year=1996/IMTS_1996.csv step_s=144.01","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:19:40.360522Z","level":"info","event":"2025-12-25 04:19:40 | SUCCESS | Uploaded | flow=IMTS year=1972 rows=443708 uri=s3://personal-projectbucket/imf/IMTS/year=1972/IMTS_1972.csv step_s=54.85","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:22:20.082777Z","level":"info","event":"2025-12-25 04:22:20 | SUCCESS | Uploaded | flow=BOP year=1998 rows=159158 uri=s3://personal-projectbucket/imf/BOP/year=1998/BOP_1998.csv step_s=158.69","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:23:08.121811Z","level":"info","event":"2025-12-25 04:23:08 | SUCCESS | Uploaded | flow=BOP year=1999 rows=176038 uri=s3://personal-projectbucket/imf/BOP/year=1999/BOP_1999.csv step_s=47.39","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:23:54.926209Z","level":"info","event":"2025-12-25 04:23:54 | SUCCESS | Uploaded | flow=BOP year=2000 rows=201590 uri=s3://personal-projectbucket/imf/BOP/year=2000/BOP_2000.csv step_s=46.24","logger":"task.stdout"}
+{"timestamp":"2025-12-25T04:23:59.952416Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2025-12-25T04:24:05.034207Z","level":"error","event":"Task killed!","logger":"task"}
