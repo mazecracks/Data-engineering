@@ -1,9 +1,7 @@
 import os
 from dataclasses import dataclass
 from dotenv import load_dotenv
-
-from config import settings as app_config  # your existing config module
-
+from config import settings as app_config
 
 @dataclass(frozen=True)
 class PipelineConfig:
