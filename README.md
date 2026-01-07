@@ -9,9 +9,8 @@ Built-in structured logging and run manifests provide full visibility into every
  
 Overall, this project provides a robust foundation for ingesting IMF data at scale and can be easily adapted for other SDMX-compliant or large API-based data sources.
  
- 
-<img width="1236" height="1024" alt="ChatGPT Image Jan 7, 2026, 04_26_00 PM" src="https://github.com/user-attachments/assets/3714ff64-3b4c-4d82-a192-c899bc92c211" />
- 
+ <img width="451" height="300" alt="Picture 1" src="https://github.com/user-attachments/assets/4b0f6d8e-34e0-403b-88c5-80ddf3905790" />
+
  
 ###
  
