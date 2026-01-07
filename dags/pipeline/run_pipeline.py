@@ -5,7 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from .config import load_config
 from .logging_utils import log_json
-from .manifest import write_manifest
+from .manifest import write_manifests
 from .tasks import process_flow_year
 
 
@@ -66,7 +66,7 @@ def run_pipeline(selected_flows=None) -> dict:
     seconds = time.perf_counter() - t0
     ended_at = dt.datetime.utcnow().isoformat(timespec="seconds") + "Z"
 
-    manifest_uri = write_manifest(cfg, run_id, results, started_at, ended_at, seconds)
+    manifest_uri = write_manifests(cfg, run_id, results, started_at, ended_at, seconds)
 
     summary = {
         "total": len(results),
