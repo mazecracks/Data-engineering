@@ -8,14 +8,16 @@ To support both small and very large datasets, the framework uses streaming HTTP
 Built-in structured logging and run manifests provide full visibility into every execution, including what data was processed, where it was stored, and whether each step succeeded or failed. Manifests are written both centrally and alongside each dataset, supporting auditability, data lineage, and operational debugging.
  
 Overall, this project provides a robust foundation for ingesting IMF data at scale and can be easily adapted for other SDMX-compliant or large API-based data sources.
- 
- <img width="451" height="300" alt="Picture 1" src="https://github.com/user-attachments/assets/4b0f6d8e-34e0-403b-88c5-80ddf3905790" />
 
+-------
  
-###
- 
- 
-##  How it works
+ <img width="1536" height="1024" alt="ChatGPT Image Jan 7, 2026, 04_26_00 PM" src="https://github.com/user-attachments/assets/6cab050f-22d2-4029-a33d-ea3c720bce48" />
+
+-------
+
+
+
+How it works
  
 At a high level, the pipeline runs as a set of independent **(flow × year)** tasks. Each task downloads IMF data for a single year of a selected flow, stream-parses the XML response into rows, writes a compressed CSV, uploads it to S3, and records a structured result. At the end of the run, the pipeline writes manifests for traceability (central + per-flow).
  
