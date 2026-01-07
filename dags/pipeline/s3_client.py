@@ -17,9 +17,18 @@ def get_s3(cfg: PipelineConfig):
 
 
 def build_s3_key(cfg: PipelineConfig, flow_name: str, year: int) -> str:
+    
     ext = "csv.gz" if cfg.compress_gzip else "csv"
-    filename = f"{flow_name}_{year}.{ext}"
-    key_ = f"{flow_name}/{filename}"
+
+    flow_key = (flow_name or "").strip().upper()
+    folder = cfg.flow_s3_folders.get(flow_key)
+
+    if not folder:
+        raise ValueError(f"No S3 folder configured for flow '{flow_key}'")
+
+    filename = f"{flow_key}_{year}.{ext}"
+    key_ = f"{folder}/{filename}"
+
     return f"{cfg.s3_prefix}/{key_}" if cfg.s3_prefix else key_
 
 

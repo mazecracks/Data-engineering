@@ -15,6 +15,7 @@ class PipelineConfig:
     aws_region: str
     bucket: str
     s3_prefix: str
+    flow_s3_folders: dict
 
     # Tier 2/3 controls
     max_workers: int
@@ -40,6 +41,7 @@ def load_config() -> PipelineConfig:
         sub_key=app_config.sub_key,
         flows=app_config.flows,
         start_year=int(app_config.startPeriod),
+        flow_s3_folders=app_config.FLOW_S3_FOLDERS,
         end_year=int(app_config.endPeriod),
         aws_region=os.getenv("AWS_REGION", "eu-west-1"),
         bucket=bucket,
