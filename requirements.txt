@@ -11,3 +11,5 @@ boto3
 apache-airflow-providers-http
 apache-airflow-providers-postgres
 apache-airflow-providers-smtp
+confluent-kafka
+faust-streaming

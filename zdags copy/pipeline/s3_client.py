@@ -50,22 +50,3 @@ def upload_fileobj(cfg: PipelineConfig, key_: str, fileobj, content_type: str, c
     if content_encoding:
         extra["ContentEncoding"] = content_encoding
     s3.upload_fileobj(fileobj, cfg.bucket, key_, ExtraArgs=extra)
-
-
-
-def transformeed_key(flow: str, year: int, prefix="transformed") -> str:
-    flow = flow.strip().upper()
-    return f"{prefix}/{flow}/{flow}_{year}.csv"
-
-def sucess_marker_key(flow: str, year: int, prefix='loaded') -> str:
-    flow = flow.strip().upper()
-    return f'{prefix}/{flow}/{year}/_SIUCESS'
-
-
-def presign_get(cfg: PipelineConfig, key_: str, expires: int) -> str:
-    s3 = get_s3(cfg)
-    return s3.generate_presigned_url(
-        'get_object',
-        params = {'Bucket': cfg.bucket, "key": key_},
-        ExpiresIn=expires
-    )
